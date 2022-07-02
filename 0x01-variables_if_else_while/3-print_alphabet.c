@@ -1,0 +1,27 @@
+#include <stdio.h>
+/**
+ * main - main block
+ * description: print alphabets in lower case
+ * and upper case
+ * Return: 0
+ */
+int main(void)
+{
+	char c = 'a';
+
+	while (c <= 'z')
+	{
+		putchar(c);
+		c++;
+	}
+
+	c = 'A';
+
+	while (c <= 'A')
+	{
+		putchar(c);
+		c++;
+	}
+	putchar('\n');
+	return (0);
+}
