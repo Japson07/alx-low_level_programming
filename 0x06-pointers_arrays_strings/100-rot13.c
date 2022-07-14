@@ -1,22 +1,23 @@
 #include "main.h"
 /**
-* *rot13 - encode a string by using rot13
-* @s: functional parameter
-*Return: s
+* rot13 - encodes a string using rot13
+* @rot: func para
+* Return: encrypted text
 */
-char *rot13(char *s)
-{
 
+char *rot13(char *rot)
+{
 	char store;
-	char *r = s
-		while (*s)
+	char *r = rot;
+
+	while (*rot)
+	{
+		store = (*rot & 32) + 65;
+		if ((*rot >= 'a' && *rot <= 'z') || (*rot >= 'A' && *rot <= 'Z'))
 		{
-			store = (*s & 32) + 65;
-			if ((*s >= 'a' && *s <= 'z') || (*s >= 'A' && *s <= 'Z'))
-			{
-				*s = (*s - store + 13) % 26 + store;
-			}
-			s++;
+			*rot = (*rot - store + 13) % 26 + store;
 		}
-	return (s);
+		rot++;
+		}
+		return (r);
 }
