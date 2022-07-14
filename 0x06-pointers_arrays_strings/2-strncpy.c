@@ -1,4 +1,4 @@
-#includs "main.h"
+#include "main.h"
 /**
 * *_strncpy - copies a string
 * @dest: first string
@@ -24,4 +24,3 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 	return (dest);
 }
-
