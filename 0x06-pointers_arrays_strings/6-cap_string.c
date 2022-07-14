@@ -1,4 +1,4 @@
-*include "main.h"
+#include "main.h"
 /**
 * *cap_string - capitalise the characters of a string
 * @s: string to modify
