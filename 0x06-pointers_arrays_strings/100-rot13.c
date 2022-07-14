@@ -1,26 +1,22 @@
 #include "main.h"
 /**
-* *rot13 - rotate by 13 characters
-* @s: string to be rotated
+* *rot13 - encode a string by using rot13
+* @s: functional parameter
 *Return: s
 */
 char *rot13(char *s)
 {
-	int i;
-	int j;
 
-	char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char b[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm"
-		for (i = 0; s[i] != '\0'; i++)
+	char store;
+	char *r = s
+		while (*s)
 		{
-			for (j = 0; a[j] != '\0'; j++)
+			store = (*s & 32) + 65;
+			if ((*s >= 'a' && *s <= 'z') || (*s >= 'A' && *s <= 'Z'))
 			{
-				if (s[i] == a[j])
-				{
-					s[i] = b[j];
-					break;
-				}
+				*s = (*s - store + 13) % 26 + store;
 			}
+			s++;
 		}
 	return (s);
 }
