@@ -1,2 +1,1 @@
-#!/bin/bash
-static libraries
+Readme for static libraries
