@@ -21,7 +21,7 @@ int wordcount(char *str)
 		{
 			while (*str != ' ' && *str != '\0')
 				str++;
-				words++;
+			words++;
 		}
 	}
 	return (words);
