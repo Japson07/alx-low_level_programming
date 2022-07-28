@@ -1,6 +1,6 @@
 #include <stdlib.h>
 /**
-* *malloc-checked - allocates memory using malloc
+* *malloc_checked - allocates memory using malloc
 * @b: number of bytes to be allocated
 * Return: pointer to the allocated space
 */
