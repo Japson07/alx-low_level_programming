@@ -7,6 +7,7 @@
 size_t list_len(const list_t *h)
 {
 	size_t n;
+
 	n = o;
 	while (h != NULL)
 	{
