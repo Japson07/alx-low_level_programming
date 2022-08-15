@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
- * listint_len - returns the number of elements in a list
+ * listint_len - returns the number of nodes in a linked list
  * @h: list
- * Return: number of elements
+ * Return: number of nodes
  */
 size_t listint_len(const listint_t *h)
 {
